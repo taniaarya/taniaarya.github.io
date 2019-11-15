@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: aquamarine;  
+}
+
+/* Navbar */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+    position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/* Cover */
+
+#cover {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url('./dogs_template_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cover h1 {
+    color: #fff;
+    font-size: 4.5em;
+    text-shadow: 0px 0px 4px #000;
+}
+
+@media screen and (max-width: 600px) {
+    #cover {
+        height: 100%;
+    }
+}
+
+/* About */
+
+#about {
+    height: 100%;
+    margin: 0% 7.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about .image-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .image-holder img {
+    width: 23.5%;
+    height: 23.5%;
+    margin: 0.2%;
+}
+
+@media screen and (max-width: 600px) {
+    #about .image-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .image-holder img {
+        width: 50%;
+        height: 50%;
+        margin: 1.2%;
+        border-radius: 7px;
+    }
+}
+
+/* Work */
+
+#work {
+    height: 100%;
+    margin: 0% 7.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Leadership */
+
+#leadership {
+    height: 100%;
+    margin: 0% 7.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer */
+
+#footer {
+    /* background-color: aqua; */
+    background-color: #333;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* General */
+
+.section-header {
+    text-align: center;
+    font-size: 3.8em;
+}
+
+.text {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.centered {
+    text-align: center;
+}
+
+.fat {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.captioned-image-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.captioned-image-holder:last-child {
+    border-bottom: none;
+}
+
+.captioned-image-holder img {
+    border-radius: 7px;
+}
+
+.captioned-image-holder .experience-title {
+    font-size: 2em;
+}
+
+.captioned-image-holder .caption-holder {
+    padding-left: 40px;
+}
+
+.captioned-image-holder .caption-holder ul {
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .captioned-image-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .captioned-image-holder .caption-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
